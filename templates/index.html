@@ -1,0 +1,54 @@
+{% include "templates/html.html" %}
+
+	<header id="header"><!--header-->
+{% include "templates/header.html" %}
+{% include "templates/header-middle.html" %}
+{% include "templates/header-bottom.html" %}
+	</header><!--/header-->
+
+<!-- slider goes here -->
+	
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2>Category</h2>
+
+						<!--/Category goes here-->
+							{% include "templates/category.html" %}
+						<!--/end category-->
+
+					    <!--/brand goes here-->
+							{% include "templates/brand.html" %}
+						<!--/end brand-->
+
+					    <!--/price range goes here-->
+							{% include "templates/price-range.html" %}
+						<!--/end price range-->
+
+					    <!--/shipping goes here-->
+							{% include "templates/shipping.html" %}
+						<!--/end shipping-->
+					
+					</div>
+				</div>
+				
+
+					<!--featured_items-->
+							{% include "templates/featured.html" %}
+					<!--end featured items-->
+
+					<!--/Categories goes here-->
+							{% include "templates/categories.html" %}
+					<!--/end categories-->
+
+					<!--/Recommended goes here-->
+							{% include "templates/recommended.html" %}
+					<!--/End recommended-->
+				</div>
+		</div>
+	</section>
+	
+
+{% include "templates/footer.html" %}

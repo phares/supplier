@@ -1,0 +1,121 @@
+{% include "templates/html.html" %}
+
+	<header id="header"><!--header-->
+{% include "templates/header.html" %}
+{% include "templates/header-middle-admin.html" %}
+{% include "templates/header-bottom-admin.html" %}
+	</header><!--/header-->
+
+<div class="container">
+<p><button name="new" class="btn btn-default" value="job" id="toggle" type="button">New</button></p>
+
+        		<div class="shopper-informations" id="xx">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="shopper-info">
+							<p>Supplier Information</p>
+							<form>
+									<input type="text" placeholder="Business Name *">
+									<input type="text" placeholder="Street Address *">
+									<input type="text" placeholder="Postal Code">
+									<input type="text" placeholder="Country *">
+									<input type="text" placeholder="County *">
+									<input type="text" placeholder="Mobile *">
+									<input type="text" placeholder="Email *">
+							</form>
+							<a class="btn btn-primary" href="">Save</a>
+						</div>
+					</div>
+
+					<div class="col-sm-5 clearfix">
+						<div class="bill-to">
+							<p>Contact info</p>
+							<div class="form-one">
+								<form>
+									<input type="text" placeholder="Business Name *">
+									<input type="text" placeholder="Street Address *">
+									<input type="text" placeholder="Postal Code">
+									<input type="text" placeholder="Country *">
+									<input type="text" placeholder="County *">
+									<input type="text" placeholder="Mobile *">
+									<input type="text" placeholder="Email *">
+								</form>
+							</div>
+							<div class="form-two">
+								<form>
+                                    <input type="text" placeholder="Business Name *">
+									<input type="text" placeholder="Street Address *">
+									<input type="text" placeholder="Postal Code">
+									<input type="text" placeholder="Country *">
+									<input type="text" placeholder="County *">
+									<input type="text" placeholder="Mobile *">
+									<input type="text" placeholder="Email *">
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="order-message">
+							<p>Details</p>
+							<textarea name="message"  placeholder="display item image" rows="16"></textarea>
+							<label><input type="checkbox"> Done</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+       <thead>
+            <tr>
+                <th>Business Name</th>
+                <th>Street Address</th>
+                <th>Postal Code</th>
+                <th>Country</th>
+                <th>County</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Business Name</th>
+                <th>Street Address</th>
+                <th>Postal Code</th>
+                <th>Country</th>
+                <th>County</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+                <td>$320,800</td>
+            </tr>
+       </tbody>
+    </table>
+</div>
+{% include "templates/footer.html" %}
+
+<script>
+$(document).ready(function(){
+    $("#toggle").click(function(){
+        $("#xx").toggle(1000);
+    });
+});
+</script>
